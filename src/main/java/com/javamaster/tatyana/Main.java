@@ -2,6 +2,7 @@ package com.javamaster.tatyana;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -12,7 +13,7 @@ public class Main {
         String name = scanner.next();
         System.out.println("Write the date of birth of the user: ");
         LocalDate dateOfBirth = LocalDate.parse(scanner.next(), DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-        us.createNewUser(name, dateOfBirth);
+        List<Users> users = us.createNewUser(name, dateOfBirth);
         System.out.println("The user is created");
     }
 }
