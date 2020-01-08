@@ -13,6 +13,6 @@ public class Main {
         System.out.println("Write the date of birth of the user: ");
         LocalDate dateOfBirth = LocalDate.parse(scanner.next(), DateTimeFormatter.ofPattern("dd.MM.yyyy"));
         us.createNewUser(name, dateOfBirth);
-
+        System.out.println("The user is created");
     }
 }
