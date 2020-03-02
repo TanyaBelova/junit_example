@@ -67,7 +67,7 @@ public class UsersServiceTest {
 
     @Test
     public void whenIsBirthDayWhenBirthdayThenReturnTrue() throws CustomFieldException {
-        boolean isBirthday = usersService.isBirthDay(usersService.getUsers().get(0), LocalDate.of(1990, 2, 1));
+        boolean isBirthday = usersService.isBirthDay(usersService.getUsers().get(0), LocalDate.of(1990, 3, 2));
         assertFalse(isBirthday);
     }
 

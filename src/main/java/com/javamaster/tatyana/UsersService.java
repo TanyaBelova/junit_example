@@ -34,7 +34,7 @@ public class UsersService {
             throw new CustomFieldException("Name could not be empty or null");
         }
         if(isNull(dateOfBirth)){
-            throw new CustomFieldException("Date of Birth could not be null");
+            throw new CustomFieldException("Date of birth could not be null");
         }
     }
 
